@@ -1,0 +1,10 @@
+.bodyBG{
+    display: block;
+    background-color: white;
+    z-index: 2;
+}
+.sliderBG{
+    background-color: rgba(112, 112, 115, 0.49);
+    height: 500px;
+
+}

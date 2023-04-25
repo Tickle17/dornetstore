@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: blueviolet;
   height: 1000px;
   margin: 0 auto;
   font-family: 'Roboto',Arial,sans-serif;
@@ -107,5 +106,6 @@ label {
 }
 
 legend {
+
   display: block;
 }

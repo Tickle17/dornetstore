@@ -10,7 +10,7 @@ export default function Header (){
             <Grid item xs={3} className="logo">
                <img src={dornetLogo} alt="logo"/>
             </Grid>
-            <Grid item xs={5} >
+            <Grid item xs={5} className="headerMenu">
                <ul >
                   <li>Мерч</li>
                   <li>Доставка</li>
