@@ -1,0 +1,53 @@
+
+.headerBG{
+    height: 80px;
+    background-color:black;
+    color: white;
+    font-size: 14px;
+}
+.header{
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items:center;
+}
+li{
+    display: inline;
+    padding: 0px 20px 29px 20px;
+    cursor: pointer;
+}
+li:hover{
+    border-bottom: solid;
+}
+li:active{
+    border-bottom: solid;
+}
+img{
+    width: 100%;
+}
+.logo{
+    justify-content: center;
+}
+button{
+    background-color: #14ab00;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 30px;
+    color:white;
+    font-family: 'Roboto',Arial,sans-serif;
+    font-weight: bold;
+}
+.MuiAutocomplete-popper MuiAutocomplete-popperDisablePortal css-1rndd9j-MuiPopper-root-MuiAutocomplete-popper MuiPopper-root{
+    border-radius: 50px;
+}
+.MuiAutocomplete-popper{
+    border-radius: 50px;
+    position: relative;
+}
+div[role=presentation] {
+    border-radius: 50px;
+
+}
+/*#combo-box-demo-listbox{*/
+/*    border-radius: 50px;*/
+/*}*/
+/*<div role="presentation" class="MuiAutocomplete-popper MuiAutocomplete-popperDisablePortal css-1rndd9j-MuiPopper-root-MuiAutocomplete-popper MuiPopper-root" style="width: 150px; position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(861.5px, 68px, 0px);" data-popper-placement="bottom"><div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAutocomplete-paper css-9e5uuu-MuiPaper-root-MuiAutocomplete-paper"><ul class="MuiAutocomplete-listbox css-gdh49b-MuiAutocomplete-listbox" role="listbox" id="combo-box-demo-listbox" aria-labelledby="combo-box-demo-label"><li tabindex="-1" role="option" id="combo-box-demo-option-0" data-option-index="0" aria-disabled="false" aria-selected="false" class="MuiAutocomplete-option">Рюкзак</li></ul></div></div>*/
