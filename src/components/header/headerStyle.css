@@ -4,13 +4,15 @@
     background-color:black;
     color: white;
     font-size: 14px;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.16);
-
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
 }
 .header{
     max-width: 1200px;
     margin: 0 auto;
     align-items:center;
+}
+.headerMenu{
+    text-align: left;
 }
 .headerMenu li{
     display: inline;

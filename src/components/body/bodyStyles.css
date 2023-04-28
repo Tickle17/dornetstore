@@ -4,7 +4,14 @@
     z-index: 2;
 }
 .sliderBG{
-    background-color: rgba(112, 112, 115, 0.49);
-    height: 500px;
-
+    background-color: rgba(112, 112, 115, 0.15);
+    max-height: 500px;
 }
+.sliderWith{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.imgSet{
+    width: 50%;
+}
+

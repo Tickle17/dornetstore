@@ -2,11 +2,11 @@ import {Card, CardActionArea, CardContent, CardMedia, Grid, Typography} from '@m
 
 const ProductCard = ({ product }) => {
    return (
-      <Grid>
+      <Grid >
          <Card
-            style={{ maxWidth: '100%', maxHeight: 'auto' }}
+            style={{ maxWidth: "1200px", maxHeight: 'auto',margin:"20px" }}
          >
-            <CardActionArea>
+            <CardActionArea style={{maxWidth: "1200px",}}>
                <CardMedia
                   component="img"
                   height="140"
@@ -32,7 +32,7 @@ const ProductCard = ({ product }) => {
 
 const ProductList = ({ products }) => {
    return (
-      <Grid container spacing={4} style={{maxWidth:"1200px",margin:"0 auto"}}>
+      <Grid container spacing={0} style={{maxWidth:"1200px",margin:"0 auto"}}>
          {products.map((product) => (
             <Grid item xs={12} sm={6} md={3} key={product.id}>
                <ProductCard product={product} />
