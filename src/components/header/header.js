@@ -5,6 +5,8 @@ import ComboBox from "./searchBar";
 import Modal from "../modal/Modal"
 import {useState} from "react";
 import LogoutPage from "../modal/login/logout_page";
+import { NavLink } from 'react-router-dom';
+
 export default function Header ({IsAuthenticate,setIsAuthenticated}){
    // states for Modal
    const [showModal,setShowModal] =useState(false)
@@ -31,8 +33,12 @@ export default function Header ({IsAuthenticate,setIsAuthenticated}){
             </Grid>
             <Grid item xs={5} className="headerMenu">
                <ul >
-                  <li>Мерч</li>
-                  <li>Доставка</li>
+                  <NavLink exact to="/" className="nav-link" activeClassName="active" active>
+                     <li>Мерч</li>
+                  </NavLink>
+                  <NavLink to="/delivery" className="nav-link" activeClassName="active">
+                     <li>Доставка</li>
+                  </NavLink>
                </ul>
             </Grid>
             <Grid container item xs={4} justifyContent="space-between" alignItems="center">

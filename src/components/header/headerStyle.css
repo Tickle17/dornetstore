@@ -13,18 +13,33 @@
 }
 .headerMenu{
     text-align: left;
+    text-decoration: none;
+    color: inherit;
 }
 .headerMenu li{
     display: inline;
     padding: 0px 20px 29px 20px;
     cursor: pointer;
 }
+.headerMenu .nav-link{
+    display: inline;
+    padding: 0px 20px 29px 20px;
+    cursor: pointer;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+
 .headerMenu li:hover{
     border-bottom: solid;
 }
-.headerMenu li:active{
+.headerMenu .nav-link.active{
     border-bottom: solid;
 }
+
 img{
     width: 80%;
 }
