@@ -33,7 +33,7 @@ export default function Header ({IsAuthenticate,setIsAuthenticated}){
             </Grid>
             <Grid item xs={5} className="headerMenu">
                <ul >
-                  <NavLink exact to="/" className="nav-link" activeClassName="active" active>
+                  <NavLink exact to="/dornetstore" className="nav-link" activeClassName="active" active>
                      <li>Мерч</li>
                   </NavLink>
                   <NavLink to="/delivery" className="nav-link" activeClassName="active">

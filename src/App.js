@@ -27,11 +27,23 @@ function App() {
           </Header>
 
           <Routes>
-             <Route exact path="/" element={
+             <Route exact path="/dornetstore" element={
                 <div>
                    <SliderBG/>
                    <BodyBG/>
                 </div>
+             }>
+             </Route>
+             <Route exact path="/delivery" element={
+                <div style={{margin:"0 auto", height:"500px",paddingTop:"250px"}}>
+                   <div style={{
+                      margin:"0 auto",
+                      width: "10%",
+                      animation: "spin 20s linear infinite"}}>
+                      Здесь будет много информации о доставке
+                   </div>
+                </div>
+
              }>
              </Route>
           </Routes>
