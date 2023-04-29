@@ -1,18 +1,18 @@
 import React, { lazy, Suspense } from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import Loader from "./loader"
 
 const App = lazy(() => import('./App'));
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
    <React.StrictMode>
       <React.StrictMode>
          <Suspense fallback={<Loader />}>
             <App />
          </Suspense>
       </React.StrictMode>,
-   </React.StrictMode>
+   </React.StrictMode>,
+document.getElementById('root')
 );
