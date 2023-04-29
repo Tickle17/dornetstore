@@ -4,13 +4,18 @@ import Header from "./components/header/header";
 import BodyItems from "./components/body/bodyItems";
 import Futter from "./components/futter/futter";
 import HomePageSlider from "./components/homePageSlider/homePageSlider";
+import {useEffect, useState} from "react";
+import {checkAuthen} from "./components/modal/login/checkAuthenticate";
 
 function App() {
-
+   let [IsAuthenticated,setIsAuthenticated] = useState(false)
+   useEffect(()=>{
+      checkAuthen({setIsAuthenticated})
+   },[])
    return (
     <div className="App">
           <div>
-             <Header></Header>
+             <Header IsAuthenticate={IsAuthenticated} setIsAuthenticated={setIsAuthenticated}></Header>
 
              <div className="sliderBG">
                 <div className="sliderWith">

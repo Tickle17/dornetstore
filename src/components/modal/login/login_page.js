@@ -22,6 +22,7 @@ export default function LoginPage({autorized,registration}) {
                type="text"
                id="username"
                name="username"
+               style={{backgroundColor:"gray"}}
             />
          </div>
 
@@ -33,12 +34,17 @@ export default function LoginPage({autorized,registration}) {
                id="pass"
                name="password"
                minLength="8"
+               style={{backgroundColor:"gray"}}
+
             />
          </div>
 
-         <input onClick={login} type="submit" value="Sign in"/>
-         <input onClick={registr} type="submit" value="registr"/>
-
+         <button>
+            <input onClick={login} type="submit" value="Sign in"/>
+         </button>
+         <button>
+            <input onClick={registr} type="submit" value="registr"/>
+         </button>
       </div>
    )
 

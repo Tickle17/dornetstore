@@ -24,19 +24,19 @@
     cursor: pointer;
 }
 
+.my-slider{
+    z-index: 10;
 
+}
 .my-slider:not(.slick-initialized) .slick-slide {
     display: flex;
     justify-content: center;
     padding: 20px 0px;
     box-sizing: border-box;
-
     max-width: 1200px;
-
 }
 
 .my-slider:not(.slick-initialized) .slick-slide img {
-    display: block;
     margin: 0 auto;
     max-height: 500px;
     border-radius: 10px;
