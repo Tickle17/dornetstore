@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/DornetShop/static/css/main.257b003a.css",
+    "main.js": "/DornetShop/static/js/main.208223e6.js",
+    "static/css/116.7a4fc3b8.chunk.css": "/DornetShop/static/css/116.7a4fc3b8.chunk.css",
+    "static/js/116.83eec2c2.chunk.js": "/DornetShop/static/js/116.83eec2c2.chunk.js",
+    "static/js/662.67ddeefe.chunk.js": "/DornetShop/static/js/662.67ddeefe.chunk.js",
+    "static/media/AppGalery.png": "/DornetShop/static/media/AppGalery.f082c6fc290d075053b1.png",
+    "static/media/AppStore.png": "/DornetShop/static/media/AppStore.31184fa5941fe6da6c82.png",
+    "static/media/DornetLoader.png": "/DornetShop/static/media/DornetLoader.68924404e9867e6663a0.png",
+    "static/media/index.png": "/DornetShop/static/media/index.fd7506214e0f202c2550.png",
+    "static/media/Google.png": "/DornetShop/static/media/Google.510356691f4b32155309.png",
+    "static/media/slick.svg": "/DornetShop/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/DornetShop/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/DornetShop/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/DornetShop/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/DornetShop/index.html",
+    "main.257b003a.css.map": "/DornetShop/static/css/main.257b003a.css.map",
+    "main.208223e6.js.map": "/DornetShop/static/js/main.208223e6.js.map",
+    "116.7a4fc3b8.chunk.css.map": "/DornetShop/static/css/116.7a4fc3b8.chunk.css.map",
+    "116.83eec2c2.chunk.js.map": "/DornetShop/static/js/116.83eec2c2.chunk.js.map",
+    "662.67ddeefe.chunk.js.map": "/DornetShop/static/js/662.67ddeefe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.257b003a.css",
+    "static/js/main.208223e6.js"
+  ]
+}
