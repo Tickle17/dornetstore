@@ -1,4 +1,11 @@
 import {Card, CardActionArea, CardContent, CardMedia, Grid, Typography} from '@material-ui/core';
+import pled from "../../imgs/Плед-спальник.jpg"
+import beysbolka from "../../imgs/Бейсболка.jpg"
+import brelok from "../../imgs/Мультитул.jpg"
+import termos from "../../imgs/Термос.jpg"
+import lighter from "../../imgs//фонарик.jpg"
+import dornetCoin from "../../imgs/dornetCoin.png"
+import buyButton from "../../imgs/buy.png"
 
 const ProductCard = ({ product }) => {
    return (
@@ -16,12 +23,32 @@ const ProductCard = ({ product }) => {
 
                />
                <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
-                     {product.title}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                     {product.description}
-                  </Typography>
+                  <Grid container spacing={2}>
+                     <Grid item xs={12}>
+                        <Typography gutterBottom variant="h5" component="h2">
+                           {product.name}
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                           {product.description}
+                        </Typography>
+                     </Grid>
+                     <Grid container item xs={12} justifyContent="space-between">
+                           <Grid item xs={6}>
+                              <button  style={{textAlign:"left"}}><img style={{maxWidth:"30%"}} src={buyButton} alt=""/></button>
+                           </Grid>
+                           <Grid container item xs={6} style={{alignItems:"center"}}>
+                              <Grid item xs={8} style={{textAlign:"right"}}>
+                                 <Typography variant="h5" color="textSecondary" component="h2">
+                                    {product.price}
+                                 </Typography>
+                              </Grid>
+                              <Grid item xs={4} style={{textAlign:"right"}}>
+                                 <img style={{maxWidth:"60%"}}  src={dornetCoin} alt=""/>
+                              </Grid>
+                           </Grid>
+                        </Grid>
+                  </Grid>
+
                </CardContent>
             </CardActionArea>
          </Card>
@@ -49,58 +76,36 @@ export default function BodyItems(){
 const products = [
    {
       id: 1,
-      name: 'Product 1',
+      name: 'Плед-спальник',
       description: 'Description of Product 1',
-      price: 100,
-      image: 'https://picsum.photos/id/1015/400/300',
+      price: 2400,
+      image: pled,
    },
    {
       id: 2,
-      name: 'Product 2',
+      name: 'Термос',
       description: 'Description of Product 2',
-      price: 200,
-      image: 'https://picsum.photos/id/1016/400/300',
+      price: 1500,
+      image: termos,
    },
    {
       id: 3,
-      name: 'Product 3',
+      name: 'Брелок-мультитул',
       description: 'Description of Product 3',
-      price: 300,
-      image: 'https://picsum.photos/id/1018/400/300',
+      price: 650,
+      image: brelok,
    },
    {
       id: 4,
-      name: 'Product 4',
+      name: 'Бейсболка',
       description: 'Description of Product 2',
-      price: 200,
-      image: 'https://picsum.photos/id/1016/400/300',
+      price: 1200,
+      image: beysbolka,
    },
    {
-      id: 4,
-      name: 'Product 4',
+      id: 5,
+      name: 'Фонарик-факел',
       description: 'Description of Product 2',
-      price: 200,
-      image: 'https://picsum.photos/id/1016/400/300',
-   },
-   {
-      id: 1,
-      name: 'Product 1',
-      description: 'Description of Product 1',
-      price: 100,
-      image: 'https://picsum.photos/id/1015/400/300',
-   },
-   {
-      id: 2,
-      name: 'Product 2',
-      description: 'Description of Product 2',
-      price: 200,
-      image: 'https://picsum.photos/id/1016/400/300',
-   },
-   {
-      id: 3,
-      name: 'Product 3',
-      description: 'Description of Product 3',
-      price: 300,
-      image: 'https://picsum.photos/id/1018/400/300',
-   },
-];
+      price: 1000,
+      image: lighter,
+   }]

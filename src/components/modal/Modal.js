@@ -47,7 +47,7 @@ export default function Modal(props) {
                }}
             ></LoginPage>
 
-            <button  onClick={props.closeModal} > Close</button>
+            <button className="headerButton"  onClick={props.closeModal} > Close</button>
          </div>
 
       </div>

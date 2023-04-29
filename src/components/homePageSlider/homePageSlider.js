@@ -3,6 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./SliderStyle.css"
+import pled from "../../imgs/Плед-спальник-transformed.png"
+import beysbolka from "../../imgs/Бейсболка-transformed.png"
+import brelok from "../../imgs/Мультитул-transformed.png"
+import termos from "../../imgs/Термос-transformed.png"
+import lighter from "../../imgs//фонарик-Q20IulPYS-transformed.png"
 
 
 export default function HomePageSlider() {
@@ -23,22 +28,19 @@ export default function HomePageSlider() {
       <div className="my-slider" style={{maxWidth:"1200px"}}>
          <Slider {...settings}>
             <div >
-               <img  src="https://picsum.photos/id/1015/1000/540" alt="картинка"/>
+               <img  src={beysbolka} alt="картинка"/>
             </div>
             <div>
-               <img src="https://picsum.photos/id/1016/1000/540" alt="картинка"/>
+               <img src={pled} alt="картинка"/>
             </div>
             <div>
-               <img src="https://picsum.photos/id/1013/1000/540" alt="картинка"/>
+               <img src={brelok} alt="картинка"/>
             </div>
             <div>
-               <img src="https://picsum.photos/id/1018/1000/540" alt="картинка"/>
+               <img src={termos} alt="картинка"/>
             </div>
             <div>
-               <img src="https://picsum.photos/id/1019/1000/540" alt="картинка"/>
-            </div>
-            <div>
-               <img src="https://picsum.photos/id/1014/1000/540" alt="картинка"/>
+               <img src={lighter} alt="картинка"/>
             </div>
          </Slider>
 

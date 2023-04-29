@@ -40,7 +40,7 @@ export default function Header ({IsAuthenticate,setIsAuthenticated}){
 
                {IsAuthenticate?
                   <LogoutPage logOut={logOut}></LogoutPage>:
-                  <button onClick={handleOpen}>Войти</button>}
+                  <button className="headerButton" onClick={handleOpen}>Войти</button>}
 
             </Grid>
          </Grid>

@@ -39,10 +39,10 @@ export default function LoginPage({autorized,registration}) {
             />
          </div>
 
-         <button>
+         <button className="headerButton">
             <input onClick={login} type="submit" value="Sign in"/>
          </button>
-         <button>
+         <button className="headerButton">
             <input onClick={registr} type="submit" value="registr"/>
          </button>
       </div>
