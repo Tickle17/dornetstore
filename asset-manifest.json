@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/DornetStore/static/css/main.257b003a.css",
-    "main.js": "/DornetStore/static/js/main.7e4ac681.js",
+    "main.js": "/DornetStore/static/js/main.90c43b3f.js",
     "static/css/116.07bbabc5.chunk.css": "/DornetStore/static/css/116.07bbabc5.chunk.css",
     "static/js/116.83eec2c2.chunk.js": "/DornetStore/static/js/116.83eec2c2.chunk.js",
-    "static/js/662.67ddeefe.chunk.js": "/DornetStore/static/js/662.67ddeefe.chunk.js",
+    "static/js/662.d78254bf.chunk.js": "/DornetStore/static/js/662.d78254bf.chunk.js",
     "static/media/AppGalery.png": "/DornetStore/static/media/AppGalery.f082c6fc290d075053b1.png",
     "static/media/AppStore.png": "/DornetStore/static/media/AppStore.31184fa5941fe6da6c82.png",
     "static/media/DornetLoader.png": "/DornetStore/static/media/DornetLoader.68924404e9867e6663a0.png",
@@ -16,13 +16,13 @@
     "static/media/slick.woff": "/DornetStore/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/DornetStore/index.html",
     "main.257b003a.css.map": "/DornetStore/static/css/main.257b003a.css.map",
-    "main.7e4ac681.js.map": "/DornetStore/static/js/main.7e4ac681.js.map",
+    "main.90c43b3f.js.map": "/DornetStore/static/js/main.90c43b3f.js.map",
     "116.07bbabc5.chunk.css.map": "/DornetStore/static/css/116.07bbabc5.chunk.css.map",
     "116.83eec2c2.chunk.js.map": "/DornetStore/static/js/116.83eec2c2.chunk.js.map",
-    "662.67ddeefe.chunk.js.map": "/DornetStore/static/js/662.67ddeefe.chunk.js.map"
+    "662.d78254bf.chunk.js.map": "/DornetStore/static/js/662.d78254bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.257b003a.css",
-    "static/js/main.7e4ac681.js"
+    "static/js/main.90c43b3f.js"
   ]
 }
