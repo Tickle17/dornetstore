@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Tickle17/dornetstore/static/css/main.257b003a.css",
-    "main.js": "/Tickle17/dornetstore/static/js/main.57a8dbbe.js",
-    "static/css/116.bb3e4c88.chunk.css": "/Tickle17/dornetstore/static/css/116.bb3e4c88.chunk.css",
-    "static/js/116.83eec2c2.chunk.js": "/Tickle17/dornetstore/static/js/116.83eec2c2.chunk.js",
-    "static/js/662.67ddeefe.chunk.js": "/Tickle17/dornetstore/static/js/662.67ddeefe.chunk.js",
-    "static/media/AppGalery.png": "/Tickle17/dornetstore/static/media/AppGalery.f082c6fc290d075053b1.png",
-    "static/media/AppStore.png": "/Tickle17/dornetstore/static/media/AppStore.31184fa5941fe6da6c82.png",
-    "static/media/DornetLoader.png": "/Tickle17/dornetstore/static/media/DornetLoader.68924404e9867e6663a0.png",
-    "static/media/index.png": "/Tickle17/dornetstore/static/media/index.fd7506214e0f202c2550.png",
-    "static/media/Google.png": "/Tickle17/dornetstore/static/media/Google.510356691f4b32155309.png",
-    "static/media/slick.svg": "/Tickle17/dornetstore/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/Tickle17/dornetstore/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/Tickle17/dornetstore/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/Tickle17/dornetstore/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/Tickle17/dornetstore/index.html",
-    "main.257b003a.css.map": "/Tickle17/dornetstore/static/css/main.257b003a.css.map",
-    "main.57a8dbbe.js.map": "/Tickle17/dornetstore/static/js/main.57a8dbbe.js.map",
-    "116.bb3e4c88.chunk.css.map": "/Tickle17/dornetstore/static/css/116.bb3e4c88.chunk.css.map",
-    "116.83eec2c2.chunk.js.map": "/Tickle17/dornetstore/static/js/116.83eec2c2.chunk.js.map",
-    "662.67ddeefe.chunk.js.map": "/Tickle17/dornetstore/static/js/662.67ddeefe.chunk.js.map"
+    "main.css": "/dornetstore/static/css/main.257b003a.css",
+    "main.js": "/dornetstore/static/js/main.7d3d2137.js",
+    "static/css/116.38d899c3.chunk.css": "/dornetstore/static/css/116.38d899c3.chunk.css",
+    "static/js/116.83eec2c2.chunk.js": "/dornetstore/static/js/116.83eec2c2.chunk.js",
+    "static/js/662.67ddeefe.chunk.js": "/dornetstore/static/js/662.67ddeefe.chunk.js",
+    "static/media/AppGalery.png": "/dornetstore/static/media/AppGalery.f082c6fc290d075053b1.png",
+    "static/media/AppStore.png": "/dornetstore/static/media/AppStore.31184fa5941fe6da6c82.png",
+    "static/media/DornetLoader.png": "/dornetstore/static/media/DornetLoader.68924404e9867e6663a0.png",
+    "static/media/index.png": "/dornetstore/static/media/index.fd7506214e0f202c2550.png",
+    "static/media/Google.png": "/dornetstore/static/media/Google.510356691f4b32155309.png",
+    "static/media/slick.svg": "/dornetstore/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/dornetstore/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/dornetstore/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/dornetstore/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/dornetstore/index.html",
+    "main.257b003a.css.map": "/dornetstore/static/css/main.257b003a.css.map",
+    "main.7d3d2137.js.map": "/dornetstore/static/js/main.7d3d2137.js.map",
+    "116.38d899c3.chunk.css.map": "/dornetstore/static/css/116.38d899c3.chunk.css.map",
+    "116.83eec2c2.chunk.js.map": "/dornetstore/static/js/116.83eec2c2.chunk.js.map",
+    "662.67ddeefe.chunk.js.map": "/dornetstore/static/js/662.67ddeefe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.257b003a.css",
-    "static/js/main.57a8dbbe.js"
+    "static/js/main.7d3d2137.js"
   ]
 }
