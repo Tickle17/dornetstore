@@ -24,11 +24,19 @@ const ProductCard = ({ product }) => {
                />
                <CardContent>
                   <Grid container spacing={2}>
-                     <Grid item xs={12}>
-                        <Typography gutterBottom variant="h5" component="h2">
+                     <Grid item xs={12} style={{textAlign:"center"}}>
+                        <Typography gutterBottom variant="h5" component="h2" style={{// Максимальная ширина блока
+                           whiteSpace: "nowrap", // Запрет переноса строк
+                           overflow: "hidden", // Скрытие всего, что не помещается в блоке
+                           textOverflow: "ellipsis", // Замена не помещающихся слов троеточием
+                        }}>
                            {product.name}
                         </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
+                        <Typography variant="body2" color="textSecondary" component="p"   style={{
+                           whiteSpace: "nowrap", // Запрет переноса строк
+                           overflow: "hidden", // Скрытие всего, что не помещается в блоке
+                           textOverflow: "ellipsis", // Замена не помещающихся слов троеточием
+                        }}>
                            {product.description}
                         </Typography>
                      </Grid>
@@ -77,35 +85,35 @@ const products = [
    {
       id: 1,
       name: 'Плед-спальник',
-      description: 'Description of Product 1',
+      description: 'Греет в самые холодные ночи',
       price: 2400,
       image: pled,
    },
    {
       id: 2,
       name: 'Термос',
-      description: 'Description of Product 2',
+      description: 'Греет душу',
       price: 1500,
       image: termos,
    },
    {
       id: 3,
       name: 'Брелок-мультитул',
-      description: 'Description of Product 3',
+      description: 'Поможет в трудную минуту',
       price: 650,
       image: brelok,
    },
    {
       id: 4,
       name: 'Бейсболка',
-      description: 'Description of Product 2',
+      description: 'Защитит от солнца',
       price: 1200,
       image: beysbolka,
    },
    {
       id: 5,
       name: 'Фонарик-факел',
-      description: 'Description of Product 2',
+      description: 'Поможет в ночи',
       price: 1000,
       image: lighter,
    }]
