@@ -7,6 +7,8 @@ import {checkAuthen} from "./components/modal/login/checkAuthenticate";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SliderBG from "./components/body/sliderBG";
 import BodyBG from "./components/body/bodyBG";
+import ProflePage from "./components/profile/profile";
+
 
 
 function App() {
@@ -18,7 +20,6 @@ function App() {
     <div className="App">
        <Router basename="/">
           <Header IsAuthenticate={IsAuthenticated} setIsAuthenticated={setIsAuthenticated}>
-
           </Header>
 
           <Routes>
@@ -30,7 +31,7 @@ function App() {
              }>
              </Route>
              <Route exact path="/delivery" element={
-                <div style={{margin:"0 auto", height:"500px",paddingTop:"250px"}}>
+                <div style={{margin:"0 auto", height:"500px", paddingTop:"250px"}}>
                    <div style={{
                       margin:"0 auto",
                       width: "10%",
@@ -38,15 +39,15 @@ function App() {
                       Здесь будет много информации о доставке
                    </div>
                 </div>
-
+             }>
+             </Route>
+             <Route exact path="/profile" element={
+                <ProflePage></ProflePage>
              }>
              </Route>
           </Routes>
-
           <Futter></Futter>
-
        </Router>
-
     </div>
   );
 }

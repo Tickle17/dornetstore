@@ -67,7 +67,7 @@ const ProductCard = ({ product }) => {
 
 const ProductList = ({ products }) => {
    return (
-      <Grid container spacing={0} style={{maxWidth:"1200px",margin:"0 auto"}}>
+      <Grid container style={{maxWidth:"1200px",margin:"0 auto"}}>
          {products.map((product) => (
             <Grid item xs={12} sm={6} md={3} key={product.id}>
                <ProductCard product={product} />

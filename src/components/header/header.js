@@ -5,7 +5,7 @@ import ComboBox from "./searchBar";
 import Modal from "../modal/Modal"
 import {useState} from "react";
 import LogoutPage from "../modal/login/logout_page";
-import { NavLink } from 'react-router-dom';
+import { NavLink,useNavigate } from 'react-router-dom';
 
 export default function Header ({IsAuthenticate,setIsAuthenticated}){
    // states for Modal
@@ -17,11 +17,14 @@ export default function Header ({IsAuthenticate,setIsAuthenticated}){
       setShowModal(false)
    }
 
+   const navigate = useNavigate();
+
    function logOut() {
       localStorage.removeItem('token')
       localStorage.removeItem('username')
-      window.location.reload()
       setIsAuthenticated(false)
+      navigate("/dornetstore")
+      window.location.reload()
    }
 
    return(
@@ -42,13 +45,22 @@ export default function Header ({IsAuthenticate,setIsAuthenticated}){
                </ul>
             </Grid>
             <Grid container item xs={4} justifyContent="space-between" alignItems="center">
-               <div><ComboBox></ComboBox></div>
+               <Grid item xs={6}><ComboBox></ComboBox></Grid>
 
                {IsAuthenticate?
-                  <LogoutPage logOut={logOut}></LogoutPage>:
+                  <Grid container item xs={6} alignItems="center">
+                     <Grid item xs={6}>
+                        <NavLink to="/profile" className="nav-link" activeClassName="active">
+                           Профиль
+                        </NavLink>
+                     </Grid>
+                     <Grid item xs={6}>
+                        <LogoutPage logOut={logOut}></LogoutPage>
+                     </Grid>
+                  </Grid>
+                  :
                   <button className="headerButton" onClick={handleOpen}>Войти</button>}
-
-            </Grid>
+             </Grid>
          </Grid>
       </Grid>
          <Modal
