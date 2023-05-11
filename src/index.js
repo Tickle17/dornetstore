@@ -13,6 +13,6 @@ root.render(
          <Suspense fallback={<Loader />}>
             <App />
          </Suspense>
-      </React.StrictMode>,
+      </React.StrictMode>
    </React.StrictMode>
 );

@@ -1,10 +1,14 @@
+import {Grid} from "@mui/material";
+
 export default function LogoutPage({logOut}) {
    return(
-      <div style={{justifyContent:"center",columnGap:"10px"}}>
-            <button className="headerButton" onClick={logOut}>
+      <Grid item xs={12} style={{justifyContent:"center"}}>
+            <button
+               className="headerButton"
+               onClick={logOut}>
                <input  type="submit" value="Log out"/>
             </button>
-      </div>
+      </Grid>
 
    )
 }

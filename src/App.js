@@ -12,10 +12,18 @@ import ProflePage from "./components/profile/profile";
 
 
 function App() {
+
+
+
    let [IsAuthenticated,setIsAuthenticated] = useState(false)
    useEffect(()=>{
       checkAuthen({setIsAuthenticated})
    },[])
+
+
+
+
+
    return (
     <div className="App">
        <Router basename="/">
@@ -24,14 +32,14 @@ function App() {
 
           <Routes>
              <Route exact path="/dornetstore" element={
-                <div>
+                <div className="adaptiveMargin">
                    <SliderBG/>
                    <BodyBG/>
                 </div>
              }>
              </Route>
              <Route exact path="/delivery" element={
-                <div style={{margin:"0 auto", height:"500px", paddingTop:"250px"}}>
+                <div style={{margin:"0 auto",  padding:"200px 0px"}}>
                    <div style={{
                       margin:"0 auto",
                       width: "10%",
@@ -42,7 +50,9 @@ function App() {
              }>
              </Route>
              <Route exact path="/profile" element={
-                <ProflePage></ProflePage>
+                <div className="adaptiveMargin">
+                   <ProflePage></ProflePage>
+                </div>
              }>
              </Route>
           </Routes>

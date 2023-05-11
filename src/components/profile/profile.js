@@ -11,8 +11,8 @@ export default function ProflePage() {
       balance: '',
    });
 
-   const [firstNameInput, setFirstNameInput] = useState(userInfo.firstname);
-   const [secondNameInput, setSecondNameInput] = useState(userInfo.secondname);
+   const [firstNameInput, setFirstNameInput] = useState("");
+   const [secondNameInput, setSecondNameInput] = useState("");
    const [editMode, setEditMode] = useState(false);
    const token = localStorage.getItem('token');
    const username = localStorage.getItem('username');
@@ -21,7 +21,7 @@ export default function ProflePage() {
       async function profileCheck(username, token) {
          try {
             const response = await axios.post(
-               'http://localhost:5001/auth/username',
+               'https://tickle17.github.io//auth/username',
                { username, token }
             );
             if (response.data.message === 'access') {
@@ -44,7 +44,7 @@ export default function ProflePage() {
    const handleSaveClick = async () => {
       try {
          await axios.post(
-            'http://localhost:5001/auth/update',
+            'https://tickle17.github.io//auth/update',
             {
                username,
                token,
@@ -71,29 +71,31 @@ export default function ProflePage() {
 
          <Grid item xs={12} style={{maxWidth:"1200px",margin:"0 auto"}}>
             <div style={{textAlign:"left",paddingBottom:"50px",fontSize:"30px"}}>Кабинет покупателя</div>
-            {!editMode ? (
-               <div onClick={() => setEditMode(true)}>
-                  Изменить
-               </div>
-            ) : (
-               <button onClick={() => handleSaveClick()}>Сохранить</button>
-            )}
          </Grid>
 
          <Grid item xs={12} style={{margin:"0 auto",
             maxWidth:"1200px",backgroundColor:"white",padding:"50px",textAlign:"left", borderRadius:"10px",boxShadow: "rgba(0, 0, 0, 0.1) 0px 2px 8px"}}>
-            <div style={{paddingBottom:"30px"}}>
-               Личная информация
-            </div>
-
-
-
-            {!editMode ? (
+            <Grid container style={{paddingBottom:"30px"}}>
+               <Grid item xs={3}>
+                  Личная информация
+               </Grid>
+               {!editMode ? (
+                  <Grid item xs={9} style={{cursor:"pointer"}} onClick={() => setEditMode(true)}>
+                     Изменить
+                  </Grid>
+               ) : (
+                  <Grid item xs={9}>
+                     <button onClick={() => handleSaveClick()}>Сохранить</button>
+                  </Grid>
+               )}
+            </Grid>
+            {!editMode ?
+               (
                   <div>
                {userInfo.firstname} {userInfo.secondname}
-            </div>)
+                  </div>)
                   : (
-               <>
+               <Grid>
                   <input
                      type="text"
                      value={firstNameInput}
@@ -107,10 +109,7 @@ export default function ProflePage() {
                      style={{backgroundColor:"rgba(112, 112, 115, 0.15)",padding:"10px",borderRadius:"10px", marginLeft:"10px"}}
 
                   />
-               </>
-
-
-
+               </Grid>
                )}
             <Grid container  style={{paddingTop:"20px"}}>
                <Grid container item xs={12}>
