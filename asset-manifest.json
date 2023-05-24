@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/dornetstore/static/css/main.257b003a.css",
-    "main.js": "/dornetstore/static/js/main.a8d0d5cd.js",
-    "static/css/854.1d7f18c9.chunk.css": "/dornetstore/static/css/854.1d7f18c9.chunk.css",
-    "static/js/854.ecf0cfc2.chunk.js": "/dornetstore/static/js/854.ecf0cfc2.chunk.js",
-    "static/js/930.bfc9b406.chunk.js": "/dornetstore/static/js/930.bfc9b406.chunk.js",
+    "main.js": "/dornetstore/static/js/main.f2e9699c.js",
+    "static/css/124.1584407c.chunk.css": "/dornetstore/static/css/124.1584407c.chunk.css",
+    "static/js/124.062d9485.chunk.js": "/dornetstore/static/js/124.062d9485.chunk.js",
+    "static/js/888.aed69b16.chunk.js": "/dornetstore/static/js/888.aed69b16.chunk.js",
     "static/media/Бейсболка-transformed.png": "/dornetstore/static/media/Бейсболка-transformed.275eda9825ed21f54497.png",
     "static/media/Плед-спальник-transformed.png": "/dornetstore/static/media/Плед-спальник-transformed.0a9352a1579a6f38cf92.png",
     "static/media/dornetCoin.png": "/dornetstore/static/media/dornetCoin.9df1cc1d5d873ec6d33c.png",
@@ -14,12 +14,8 @@
     "static/media/Термос-transformed.png": "/dornetstore/static/media/Термос-transformed.1f595645858d0c14fe21.png",
     "static/media/AppStore.png": "/dornetstore/static/media/AppStore.31184fa5941fe6da6c82.png",
     "static/media/DornetLoader.png": "/dornetstore/static/media/DornetLoader.68924404e9867e6663a0.png",
-    "static/media/Бейсболка.jpg": "/dornetstore/static/media/Бейсболка.8d56741c38da32701a36.jpg",
-    "static/media/фонарик.jpg": "/dornetstore/static/media/фонарик.78c029f4d4727f125d85.jpg",
     "static/media/index.png": "/dornetstore/static/media/index.fd7506214e0f202c2550.png",
-    "static/media/Мультитул.jpg": "/dornetstore/static/media/Мультитул.85d27be936b048686a1b.jpg",
     "static/media/buy.png": "/dornetstore/static/media/buy.33b0413086e5f8be3a01.png",
-    "static/media/Плед-спальник.jpg": "/dornetstore/static/media/Плед-спальник.411198a2fb08e541dd62.jpg",
     "static/media/Google.png": "/dornetstore/static/media/Google.510356691f4b32155309.png",
     "static/media/slick.svg": "/dornetstore/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/dornetstore/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -27,13 +23,13 @@
     "static/media/slick.woff": "/dornetstore/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/dornetstore/index.html",
     "main.257b003a.css.map": "/dornetstore/static/css/main.257b003a.css.map",
-    "main.a8d0d5cd.js.map": "/dornetstore/static/js/main.a8d0d5cd.js.map",
-    "854.1d7f18c9.chunk.css.map": "/dornetstore/static/css/854.1d7f18c9.chunk.css.map",
-    "854.ecf0cfc2.chunk.js.map": "/dornetstore/static/js/854.ecf0cfc2.chunk.js.map",
-    "930.bfc9b406.chunk.js.map": "/dornetstore/static/js/930.bfc9b406.chunk.js.map"
+    "main.f2e9699c.js.map": "/dornetstore/static/js/main.f2e9699c.js.map",
+    "124.1584407c.chunk.css.map": "/dornetstore/static/css/124.1584407c.chunk.css.map",
+    "124.062d9485.chunk.js.map": "/dornetstore/static/js/124.062d9485.chunk.js.map",
+    "888.aed69b16.chunk.js.map": "/dornetstore/static/js/888.aed69b16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.257b003a.css",
-    "static/js/main.a8d0d5cd.js"
+    "static/js/main.f2e9699c.js"
   ]
 }
