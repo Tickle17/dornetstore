@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/dornetstore/static/css/main.257b003a.css",
-    "main.js": "/dornetstore/static/js/main.29928ba4.js",
-    "static/css/124.1584407c.chunk.css": "/dornetstore/static/css/124.1584407c.chunk.css",
-    "static/js/124.7079f564.chunk.js": "/dornetstore/static/js/124.7079f564.chunk.js",
+    "main.js": "/dornetstore/static/js/main.6ca71c0f.js",
+    "static/css/487.57b9aa34.chunk.css": "/dornetstore/static/css/487.57b9aa34.chunk.css",
+    "static/js/487.1d56bfa5.chunk.js": "/dornetstore/static/js/487.1d56bfa5.chunk.js",
     "static/js/888.aed69b16.chunk.js": "/dornetstore/static/js/888.aed69b16.chunk.js",
     "static/media/Бейсболка-transformed.png": "/dornetstore/static/media/Бейсболка-transformed.275eda9825ed21f54497.png",
     "static/media/Плед-спальник-transformed.png": "/dornetstore/static/media/Плед-спальник-transformed.0a9352a1579a6f38cf92.png",
@@ -23,13 +23,13 @@
     "static/media/slick.woff": "/dornetstore/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/dornetstore/index.html",
     "main.257b003a.css.map": "/dornetstore/static/css/main.257b003a.css.map",
-    "main.29928ba4.js.map": "/dornetstore/static/js/main.29928ba4.js.map",
-    "124.1584407c.chunk.css.map": "/dornetstore/static/css/124.1584407c.chunk.css.map",
-    "124.7079f564.chunk.js.map": "/dornetstore/static/js/124.7079f564.chunk.js.map",
+    "main.6ca71c0f.js.map": "/dornetstore/static/js/main.6ca71c0f.js.map",
+    "487.57b9aa34.chunk.css.map": "/dornetstore/static/css/487.57b9aa34.chunk.css.map",
+    "487.1d56bfa5.chunk.js.map": "/dornetstore/static/js/487.1d56bfa5.chunk.js.map",
     "888.aed69b16.chunk.js.map": "/dornetstore/static/js/888.aed69b16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.257b003a.css",
-    "static/js/main.29928ba4.js"
+    "static/js/main.6ca71c0f.js"
   ]
 }
