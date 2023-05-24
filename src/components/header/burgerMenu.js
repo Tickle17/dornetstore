@@ -11,32 +11,38 @@ export default function BurgerMenu ({IsAuthenticate,logOut,handleOpen}) {
    }
 
    return (
-      <Grid item xs={6}>
-         <button
-            className={`hamburger-button ${isOpen ? "open" : ""}`}
-            onClick={toggleMenu}
-         >
-            <span className="line line-1"></span>
-            <span className="line line-2"></span>
-            <span className="line line-3"></span>
-         </button>
+      <Grid>
+         <Grid>
+            <button
+               className={`hamburger-button ${isOpen ? "open" : ""}`}
+               onClick={toggleMenu}
+            >
+               <span className="line line-1"></span>
+               <span className="line line-2"></span>
+               <span className="line line-3"></span>
+            </button>
+         </Grid>
             <div className={`sidebar ${isOpen ? 'open' : ''}`}>
                <ul>
-                  <NavLink exact to="/dornetstore" className="nav-link" active>
-                     <li>Мерч</li>
+                  <NavLink to="/dornetstore" className="nav-link">
+                     <li             onClick={toggleMenu}
+                     >Мерч</li>
                   </NavLink>
 
                <NavLink to="/delivery" className="nav-link">
-                  <li>Доставка</li>
+                  <li             onClick={toggleMenu}
+                  >Доставка</li>
                </NavLink>
 
                {IsAuthenticate?(<div>
                      <NavLink to="/profile" className="nav-link">
-                        <li>
+                        <li             onClick={toggleMenu}
+                        >
                            Профиль
                         </li>
                      </NavLink>
-                     <li>
+                     <li             onClick={toggleMenu}
+                     >
                         <LogoutPage logOut={logOut}></LogoutPage>
                      </li>
                   </div>)

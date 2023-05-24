@@ -1,11 +1,9 @@
 import React from "react";
 import loading from "./imgs/DornetLoader.png"
 
-const Loader = () => (
+const LoaderItem = () => (
    <div className="loader-img">
-      <img style={{  position: "absolute",
-         top: "45%",
-         left: "45%",
+      <img style={{  position: "relative",
          transform: "translate(-50%, -50%)",
          zIndex: 999999,
          width: "10%",
@@ -14,4 +12,4 @@ const Loader = () => (
    </div>
 );
 
-export default Loader;
+export default LoaderItem;

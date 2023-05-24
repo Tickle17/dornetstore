@@ -8,18 +8,18 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SliderBG from "./components/body/sliderBG";
 import BodyBG from "./components/body/bodyBG";
 import ProflePage from "./components/profile/profile";
+import Basket from "./components/basket/basket";
 
 
 
 function App() {
 
 
-
+   // стэйт аутентефикации
    let [IsAuthenticated,setIsAuthenticated] = useState(false)
    useEffect(()=>{
       checkAuthen({setIsAuthenticated})
    },[])
-
 
 
 
@@ -39,7 +39,7 @@ function App() {
              }>
              </Route>
              <Route exact path="/delivery" element={
-                <div style={{margin:"0 auto",  padding:"200px 0px"}}>
+                <div style={{margin:"0 auto",  padding:"200px 0px",minHeight:"600px"}}>
                    <div style={{
                       margin:"0 auto",
                       width: "10%",
@@ -52,6 +52,12 @@ function App() {
              <Route exact path="/profile" element={
                 <div className="adaptiveMargin">
                    <ProflePage></ProflePage>
+                </div>
+             }>
+             </Route>
+             <Route exact path="/basket" element={
+                <div>
+                   <Basket></Basket>
                 </div>
              }>
              </Route>

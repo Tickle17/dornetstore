@@ -36,46 +36,56 @@ export default function Header ({IsAuthenticate,setIsAuthenticated}){
       <div>
          <Grid container className="headerBG">
             <Grid container className="header" justifyContent="space-between">
-               <Grid item xs={10} sm={7} md={3} className="logo">
-                  <NavLink exact to="/dornetstore" className="nav-link" active>
+               <Grid item xs={10} sm={9} md={3} className="logo">
+                  <NavLink to="/dornetstore" className="nav-link">
                      <img src={dornetLogo} alt="logo" style={{cursor:"pointer"}}/>
                   </NavLink>
                </Grid>
                {isWide?(
-                  <Grid container item md={9} alignItems="center">
-                     <Grid item xs={6} className="headerMenu">
-                        <ul >
-                           <NavLink exact to="/dornetstore" className="nav-link" active>
+                  <Grid container item md={9} alignItems="center" justifyContent="space-between">
+                     <Grid item sm={6} className="headerMenu">
+                           <NavLink to="/dornetstore" className="nav-link">
                               <li>Мерч</li>
                            </NavLink>
                            <NavLink to="/delivery" className="nav-link">
                               <li>Доставка</li>
                            </NavLink>
-                        </ul>
                      </Grid>
-                     <Grid container item sm={6} justifyContent="space-between" alignItems="center">
-                        <Grid item sm={6}><ComboBox></ComboBox></Grid>
+                     <Grid container item sm={6}alignItems="center">
+                        {/*<Grid item sm={3}>*/}
+                        {/*   <ComboBox></ComboBox>*/}
+                        {/*</Grid>*/}
 
                         {IsAuthenticate?
-                           <Grid container item xs={6} md={6} alignItems="center">
-                              <Grid item xs={5}>
-                                 <NavLink to="/profile" className="nav-link">
-                                    Профиль
+                           <Grid container item xs={12} md={12} alignItems="center" justifyContent="flex-end">
+
+                              <Grid item xs={4} className="headerMenu">
+                                 <NavLink to="/basket" className="nav-link">
+                                    <li>Корзина</li>
                                  </NavLink>
                               </Grid>
-                              <Grid item xs={7}>
+
+                              <Grid item xs={4} className="headerMenu">
+                                 <NavLink to="/profile" className="nav-link">
+                                    <li>Профиль</li>
+                                 </NavLink>
+                              </Grid>
+
+                              <Grid item xs={4}>
                                  <LogoutPage logOut={logOut}></LogoutPage>
                               </Grid>
                            </Grid>
                            :
-                           <Grid item xs={6} md={6}>
-                              <button className="headerButton" onClick={handleOpen}>Войти</button>
+                           <Grid item xs={12} container justifyContent="flex-end">
+                              <Grid>
+                                 <button className="headerButton" onClick={handleOpen}>Войти</button>
+                              </Grid>
                            </Grid>
                         }
                      </Grid>
                   </Grid>
                ):(
-                  <Grid item xs={2} sm={2} style={{overflow:"hidden"}}>
+                  <Grid item xs={2} sm={1} style={{overflow:"hidden"}}>
                      <BurgerMenu
                         IsAuthenticate = {IsAuthenticate}
                         logOut={logOut} handleOpen={handleOpen}></BurgerMenu>
@@ -88,7 +98,6 @@ export default function Header ({IsAuthenticate,setIsAuthenticated}){
             closeModal={handeClose}
             IsAuthenticate={IsAuthenticate}
             setIsAuthenticated={setIsAuthenticated}>
-
          </Modal>
       </div>
 

@@ -1,13 +1,37 @@
 import {Card, CardActionArea, CardContent, CardMedia, Grid, Typography} from '@material-ui/core';
-import pled from "../../imgs/Плед-спальник.jpg"
-import beysbolka from "../../imgs/Бейсболка.jpg"
-import brelok from "../../imgs/Мультитул.jpg"
-import termos from "../../imgs/Термос.jpg"
-import lighter from "../../imgs//фонарик.jpg"
 import dornetCoin from "../../imgs/dornetCoin.png"
 import buyButton from "../../imgs/buy.png"
+import buyButton_hover from "../../imgs/buyed.png"
+import axios from "axios";
+import {memo, useEffect, useState} from "react";
+import ModalLoader from "../modal/modalLoader";
+
+
+const token = localStorage.getItem('token');
+const username = localStorage.getItem('username');
 
 const ProductCard = ({ product }) => {
+const [loading, setLoading] =useState(false)
+   async function sendProd (){
+      try {
+         setLoading(true)
+         const response= await axios.post(
+            "http://localhost:5001/auth/updateBusket",
+            {
+               token,username, name: product.name, price: product.price, photo:product.image,description:product.description,createdAt:product.createdAt
+            }
+         )
+         if (response.data.message==="success"){
+            console.log(response.data.message)
+            setLoading(false)
+         }
+      }
+      catch (error) {
+         console.log(error)}
+      setLoading(false)
+
+   }
+
    return (
       <Grid >
          <Card
@@ -25,7 +49,7 @@ const ProductCard = ({ product }) => {
                <CardContent>
                   <Grid container spacing={2}>
                      <Grid item xs={12} style={{textAlign:"center"}}>
-                        <Typography gutterBottom variant="h5" component="h2" style={{// Максимальная ширина блока
+                        <Typography gutterBottom variant="h5" component="h2" style={{
                            whiteSpace: "nowrap", // Запрет переноса строк
                            overflow: "hidden", // Скрытие всего, что не помещается в блоке
                            textOverflow: "ellipsis", // Замена не помещающихся слов троеточием
@@ -40,23 +64,27 @@ const ProductCard = ({ product }) => {
                            {product.description}
                         </Typography>
                      </Grid>
-                     <Grid container item xs={12} justifyContent="space-between">
-                           <Grid item xs={6}>
-                              <button  style={{textAlign:"left"}}><img style={{maxWidth:"30%"}} src={buyButton} alt=""/></button>
+                     <Grid container item xs={12} justifyContent="space-between" style={{alignItems:"center"}}>
+                           <Grid item xs={3} sm={2}>
+                              <button onClick={sendProd} style={{textAlign:"left"}}>
+                                 <img style={{maxWidth:"100%"}} src={buyButton} alt=""
+                                onMouseOver={(e) => (e.currentTarget.src = buyButton_hover)}
+                                onMouseOut={(e) => (e.currentTarget.src = buyButton)}/>
+                              </button>
                            </Grid>
-                           <Grid container item xs={6} style={{alignItems:"center"}}>
-                              <Grid item xs={8} style={{textAlign:"right"}}>
-                                 <Typography variant="h5" color="textSecondary" component="h2">
+                           <Grid container justifyContent="space-between" item xs={9} sm={10} style={{alignItems:"center"}}>
+                              <Grid item xs={7} sm={9} style={{textAlign:"right"}}>
+                                 <Typography variant="h5" color="textSecondary">
                                     {product.price}
                                  </Typography>
                               </Grid>
-                              <Grid item xs={4} style={{textAlign:"right"}}>
+                              <Grid item xs={5} sm={3}>
                                  <img style={{maxWidth:"60%"}}  src={dornetCoin} alt=""/>
                               </Grid>
                            </Grid>
                         </Grid>
                   </Grid>
-
+                  {loading ? <ModalLoader></ModalLoader> : <></>}
                </CardContent>
             </CardActionArea>
          </Card>
@@ -65,55 +93,32 @@ const ProductCard = ({ product }) => {
    );
 };
 
-const ProductList = ({ products }) => {
+const ProductList =  memo(({ products }) => {
    return (
       <Grid container style={{maxWidth:"1200px",margin:"0 auto"}}>
          {products.map((product) => (
-            <Grid item xs={12} sm={6} md={3} key={product.id}>
+            <Grid item xs={6} sm={6} md={3} key={product.id}>
                <ProductCard product={product} />
             </Grid>
          ))}
       </Grid>
    );
-};
+});
 export default function BodyItems(){
+   let [products,setProducts] =useState([])
+   useEffect(()=>{
+      async function getProducts (){
+         try{
+            const response = await axios.get("http://localhost:5001/items/items")
+            setProducts(response.data.items)
+         }
+         catch (error){
+            console.log(error)
+         }
+      }
+      getProducts()
+   },[])
    return(
       <ProductList products={products}></ProductList>
    )
 }
-const products = [
-   {
-      id: 1,
-      name: 'Плед-спальник',
-      description: 'Греет в самые холодные ночи',
-      price: 2400,
-      image: pled,
-   },
-   {
-      id: 2,
-      name: 'Термос',
-      description: 'Греет душу',
-      price: 1500,
-      image: termos,
-   },
-   {
-      id: 3,
-      name: 'Брелок-мультитул',
-      description: 'Поможет в трудную минуту',
-      price: 650,
-      image: brelok,
-   },
-   {
-      id: 4,
-      name: 'Бейсболка',
-      description: 'Защитит от солнца',
-      price: 1200,
-      image: beysbolka,
-   },
-   {
-      id: 5,
-      name: 'Фонарик-факел',
-      description: 'Поможет в ночи',
-      price: 1000,
-      image: lighter,
-   }]

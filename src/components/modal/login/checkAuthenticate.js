@@ -17,7 +17,7 @@ export function checkAuthen({setIsAuthenticated}){
       }
       try {
          const response = await axios.post(
-            'https://tickle17.github.io//auth/check',
+            'http://localhost:5001/auth/check',
             { username, token });
          if (response.data.message === 'access'){
             return setIsAuthenticated(true);
