@@ -28,7 +28,7 @@ export default function ProflePage() {
          setLoader(true)
          try {
             const response = await axios.post(
-               'http://localhost:5001/auth/username',
+               'https://dornetshop.ru:5001/auth/username',
                { username, token }
             );
             if (response.data.message === 'access') {
@@ -55,7 +55,7 @@ export default function ProflePage() {
    const handleSaveClick = async () => {
       try {
          await axios.post(
-            'http://localhost:5001/auth/update',
+            'https://dornetshop.ru5001/auth/update',
             {
                username,
                token,

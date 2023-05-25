@@ -8,10 +8,10 @@ const username = localStorage.getItem('username');
 async function deleteBusketItem (itemId){
    try{
       await axios.post(
-         "http://localhost:5001/auth/deleteItemBusket",
+         "https://dornetshop.ru:5001/auth/deleteItemBusket",
          {username,itemId}
       )
-      window.location.reload();
+      // window.location.reload();
    }
    catch (e) {
       console.log(e);
@@ -21,12 +21,12 @@ async function deleteBusketItem (itemId){
 async function delBusket (){
    try {
       await axios.post(
-         "http://localhost:5001/auth/deleteBusket",
+         "https://dornetshop.ru:5001/auth/deleteBusket",
          {
             username,token
          }
       )
-      window.location.reload();
+      // window.location.reload();
    }
    catch (e) {
       console.log(e);
@@ -36,12 +36,12 @@ async function buyBusket ({basket},total){
    try{
       console.log(basket, total)
       const response= await axios.post(
-         "http://localhost:5001/auth/sendOrder",
+         "https://dornetshop.ru:5001/auth/sendOrder",
          {username,basket,total}
       )
       if(response.data.message==="access"){
          delBusket()
-         window.location.reload();
+         // window.location.reload();
       }
       else return response.data
    }
@@ -120,7 +120,7 @@ export default function Basket() {
       async function getBasket() {
          try {
             const response = await axios.post(
-               'http://localhost:5001/auth/basket',
+               'https://dornetshop.ru:5001/auth/basket',
                { username, token }
             );
             if (response.data.message === 'access') {

@@ -16,7 +16,7 @@ const [loading, setLoading] =useState(false)
       try {
          setLoading(true)
          const response= await axios.post(
-            "http://localhost:5001/auth/updateBusket",
+            "https://dornetshop.ru:5001/auth/updateBusket",
             {
                token,username, name: product.name, price: product.price, photo:product.image,description:product.description,createdAt:product.createdAt
             }
@@ -109,7 +109,7 @@ export default function BodyItems(){
    useEffect(()=>{
       async function getProducts (){
          try{
-            const response = await axios.get("http://localhost:5001/items/items")
+            const response = await axios.get("https://dornetshop.ru:5001/items/items")
             setProducts(response.data.items)
          }
          catch (error){

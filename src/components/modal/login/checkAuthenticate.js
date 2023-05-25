@@ -17,7 +17,7 @@ export function checkAuthen({setIsAuthenticated}){
       }
       try {
          const response = await axios.post(
-            'http://localhost:5001/auth/check',
+            'https://dornetshop.ru:5001/auth/check',
             { username, token });
          if (response.data.message === 'access'){
             return setIsAuthenticated(true);

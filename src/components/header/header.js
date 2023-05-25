@@ -1,7 +1,6 @@
 import { Grid } from '@mui/material';
 import dornetLogo from "../../imgs/index.png"
 import "./headerStyle.css"
-import ComboBox from "./searchBar";
 import Modal from "../modal/Modal"
 import React, {useState} from "react";
 import LogoutPage from "../modal/login/logout_page";

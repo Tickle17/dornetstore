@@ -18,7 +18,7 @@ export default function Modal(props) {
 
       try {
          const response = await axios.post(
-            'http://localhost:5001/auth/login',
+            'https://dornetshop.ru:5001/auth/login',
             { username, password });
          // сохраняем JWT токен в локальном хранилище
          localStorage.setItem('token', response.data.token);
@@ -38,7 +38,7 @@ export default function Modal(props) {
    async function registration(username,password) {
       try {
          const response = await axios.post(
-            'http://localhost:5001/auth/registration',
+            'https://dornetshop.ru:5001/auth/registration',
             { username, password });
          // сохраняем JWT токен в локальном хранилище
          localStorage.setItem('token', response.data.token);
